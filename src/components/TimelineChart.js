@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import './TimelineChart.css';
 
 class TimelineChart extends React.Component {
 	constructor(props) {
@@ -73,6 +74,7 @@ class TimelineChart extends React.Component {
 	render() {
 		return (
 			<div id="chart">
+				<h2 className="chart-title"> My Technical Experience over time </h2>
 				<ReactApexChart options={this.state.options} series={this.state.series} type="rangeBar" height={450} />
 			</div>
 		);

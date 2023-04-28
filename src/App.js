@@ -1,22 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-	const animals = [
-		{ id: 1, name: "Dog" },
-		{ id: 2, name: "Bird" },
-		{ id: 3, name: "Cat" },
-		{ id: 4, name: "Mouse" },
-		{ id: 5, name: "Horse" }
-	];
+import React from "react";
+import TimelineChart from "./components/TimelineChart";
 
-	const renderAnimals = animals.map(animal => (
-		<li key={animal.id}>{animal.name}</li>
-	))
-
-	return (
-		<ul>{renderAnimals}</ul>
-	);
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+	
+	render() {
+		return (
+			<div className="app">
+				<div className="row">
+					<div className="mixed-chart">
+						<TimelineChart />
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default App;

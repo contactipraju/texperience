@@ -1,7 +1,8 @@
 import './App.css';
 
 import React from "react";
-import TimelineChart from "./components/TimelineChart";
+
+import TimelineChart from "./components/TimelineChart/TimelineChart";
 
 class App extends React.Component {
 	constructor(props) {

@@ -9,11 +9,12 @@ function Header() {
 
 	return (
 		<div className='header'>
-			<Link to="/" className='site-title'> My Profile </Link>
+			<Link to="/" className='site-title'>
+				<h3>{profile.name}</h3>
+			</Link>
 			{
 				!isLoading && profile.name && profile.name.length && 
 				<div className='details'>
-					<div><h3>{profile.name}</h3></div>
 					<div>{profile.contact}</div>
 					<div>{profile.email}</div>
 					<div><a href={profile.linkedin}>{profile.linkedin}</a></div>

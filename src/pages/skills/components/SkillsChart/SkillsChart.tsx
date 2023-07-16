@@ -36,8 +36,8 @@ const options: ApexOptions = {
 	}
 };
 
-const SkillsChart = (props: any) => {
-	const { isLoading, skills, setSkills, tenure, setTenure } = useContext(SkillsContext) as ISkillsContext;
+const SkillsChart = () => {
+	const { isLoading, skills, tenure } = useContext(SkillsContext) as ISkillsContext;
 
 	options['annotations'] = {
 		xaxis: tenure

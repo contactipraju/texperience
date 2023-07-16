@@ -1,10 +1,10 @@
 import './SkillsChart.scss';
 
+import { ApexOptions } from 'apexcharts';
 import ReactApexChart from "react-apexcharts";
 
 import { useContext } from 'react';
 import { SkillsContext, ISkillsContext } from '../../SkillsContext';
-import { ApexOptions } from 'apexcharts';
 
 const options: ApexOptions = {
 	chart: {
@@ -20,6 +20,9 @@ const options: ApexOptions = {
 	xaxis: {
 		type: 'datetime'
 	},
+	yaxis: [
+		{ opposite: true }
+	],
 	stroke: {
 		width: 1
 	},
@@ -34,7 +37,11 @@ const options: ApexOptions = {
 };
 
 const SkillsChart = (props: any) => {
-	const { isLoading, skills, setSkills } = useContext(SkillsContext) as ISkillsContext;
+	const { isLoading, skills, setSkills, tenure, setTenure } = useContext(SkillsContext) as ISkillsContext;
+
+	options['annotations'] = {
+		xaxis: tenure
+	};
 
 	const chartData = {
 		series: [{

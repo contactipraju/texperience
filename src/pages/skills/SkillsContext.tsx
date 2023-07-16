@@ -1,17 +1,23 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 
-import { getSkills }  from './Skills.service';
+import { getExperiences }  from './Skills.service';
 
 export interface SkillsInfo {
 	x: string;
 	y: any[];
+}
+export interface TenureInfo {
+	x: string;
+	x2: any[];
 }
 
 export interface ISkillsContext {
 	isLoading: boolean;
 	skills: SkillsInfo[];
 	setSkills: (skills: SkillsInfo[]) => void;
+	tenure: XAxisAnnotations[];
+	setTenure: (tenure: XAxisAnnotations[]) => void;
 }
 
 const skillsDefaultValue = {
@@ -19,24 +25,31 @@ const skillsDefaultValue = {
 	setSkills: () => {}
 };
 
+const tenureDefaultValue = {
+	tenure: [],
+	setTenure: () => {}
+};
+
 export const SkillsContext = createContext({});
 
 export const SkillsContextProvider = ({ children }: any) => {
 
-	const [skills, setSkills] = useState(skillsDefaultValue);
 	const [isLoading, setIsLoading] = useState(true);
+	const [skills, setSkills] = useState(skillsDefaultValue);
+	const [tenure, setTenure] = useState(tenureDefaultValue);
 
 	useEffect(() => {
-		getSkills().then((resp) => {
-			setSkills(resp);
+		getExperiences().then((resp) => {
+			setSkills(resp.skills);
+			setTenure(resp.tenure);
 			setIsLoading(false);
-			console.log("Skills Loaded: ", resp);
+			console.log("Experiences Loaded: ", resp);
 		})
 	}, []);
 
 	return (
 		<SkillsContext.Provider value={{
-			isLoading, skills, setSkills
+			isLoading, skills, setSkills, tenure, setTenure
 		}}>
 			{children}
 		</SkillsContext.Provider>

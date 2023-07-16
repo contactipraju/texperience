@@ -2,18 +2,19 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 
 import { useContext } from 'react';
-import { ProfileContext, IProfileContext } from './../../contexts/ProfileContext';
+import { ProfileContext, IProfileContext } from '../../pages/profile/ProfileContext';
 
 function Header() {
 	const { isLoading, profile } = useContext(ProfileContext) as IProfileContext;
 
 	return (
 		<div className='header'>
-			<Link to="/" className='site-title'> My Profile </Link>
+			<Link to="/" className='site-title'>
+				<h3>{profile.name}</h3>
+			</Link>
 			{
 				!isLoading && profile.name && profile.name.length && 
 				<div className='details'>
-					<div><h3>{profile.name}</h3></div>
 					<div>{profile.contact}</div>
 					<div>{profile.email}</div>
 					<div><a href={profile.linkedin}>{profile.linkedin}</a></div>

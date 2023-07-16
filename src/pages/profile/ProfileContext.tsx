@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 
-import { getProfile }  from '../core/Profile/Profile.service';
+import { getProfile }  from './Profile.service';
 
 export interface ProfileInfo {
 	name: string;
@@ -33,7 +33,7 @@ export const ProfileContextProvider = ({ children }: any) => {
 		getProfile().then((resp) => {
 			setProfile(resp.data);
 			setIsLoading(false);
-			console.log("Profile Loaded: ", resp.data);
+			// console.log("Profile Loaded: ", resp.data);
 		})
 	}, []);
 

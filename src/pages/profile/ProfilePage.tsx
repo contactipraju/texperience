@@ -1,18 +1,18 @@
-import './DetailsPage.scss';
+import './ProfilePage.scss';
 
-import DetailsForm from './components/DetailsForm/DetailsForm';
+import ProfileForm from './components/ProfileForm/ProfileForm';
 
-const DetailsPage = () => {
+const ProfilePage = () => {
 	return (
-		<div id="details-page">
+		<div id="profile-page">
 			<h2>Contact Information</h2>
 			<div className="desc"> Changes done here reflect across the app, as they're stored in global store (using Context API) </div>
 
 			<div className="content">
-				<DetailsForm />
+				<ProfileForm />
 			</div>
 		</div>
 	)
 }
 
-export default DetailsPage;
+export default ProfilePage;

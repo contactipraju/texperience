@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Header from './core/Header/Header';
 import NavBar from './core/NavBar/NavBar';
 
-import { ProfileContextProvider } from './contexts/ProfileContext';
+import { ProfileContextProvider } from './pages/profile/ProfileContext';
 
+import ProfilePage   from './pages/profile/ProfilePage';
 import SkillsPage    from './pages/skills/SkillsPage';
-import DetailsPage   from './pages/details/DetailsPage';
 import PortfolioPage from './pages/portfolio/PortfolioPage';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
 						<NavBar />
 
 						<Routes>
-							<Route path="/skills" element={<SkillsPage />} />
-							<Route path="/details" element={<DetailsPage />} />
+							<Route path="/profile" element={<ProfilePage />} />
+							<Route path="/experience" element={<SkillsPage />} />
 							<Route path="/portfolio" element={<PortfolioPage />} />
 							<Route path="*" element={<Navigate to="/skills" />} />
 						</Routes>

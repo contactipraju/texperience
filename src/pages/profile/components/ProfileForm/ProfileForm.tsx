@@ -58,7 +58,7 @@ const ProfileForm = (props: any) => {
 	};
 
 	return (
-		<div id="Profile-form">
+		<div id="profile-form">
 			<div className="content">
 				{!isLoading && 
 					<FormRenderer

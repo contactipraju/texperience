@@ -1,13 +1,16 @@
 import './SkillsPage.scss';
 
-import TimelineChart from './components/TimelineChart/TimelineChart';
+import SkillsContextProvider from './SkillsContext';
+import SkillsChart from './components/SkillsChart/SkillsChart';
 
 const SkillsPage = () => {
 	return (
 		<div id="skills-page">
-			<div className="content">
-				<TimelineChart />
-			</div>
+			<SkillsContextProvider>
+				<div className="content">
+					<SkillsChart />
+				</div>
+			</SkillsContextProvider>
 		</div>
 	)
 }

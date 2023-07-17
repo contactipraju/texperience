@@ -33,7 +33,6 @@ export const ProfileContextProvider = ({ children }: any) => {
 		getProfile().then((resp) => {
 			setProfile(resp.data);
 			setIsLoading(false);
-			// console.log("Profile Loaded: ", resp.data);
 		})
 	}, []);
 

@@ -7,9 +7,9 @@ import NavBar from './core/NavBar/NavBar';
 
 import { ProfileContextProvider } from './pages/profile/ProfileContext';
 
-import ProfilePage   from './pages/profile/ProfilePage';
 import SkillsPage    from './pages/skills/SkillsPage';
 import PortfolioPage from './pages/portfolio/PortfolioPage';
+import ProfilePage   from './pages/profile/ProfilePage';
 
 function App() {
 		return (
@@ -20,9 +20,9 @@ function App() {
 						<NavBar />
 
 						<Routes>
-							<Route path="/profile" element={<ProfilePage />} />
 							<Route path="/experience" element={<SkillsPage />} />
 							<Route path="/portfolio" element={<PortfolioPage />} />
+							<Route path="/contact" element={<ProfilePage />} />
 							<Route path="*" element={<Navigate to="/skills" />} />
 						</Routes>
 					</Router>

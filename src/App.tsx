@@ -23,7 +23,7 @@ function App() {
 							<Route path="/experience" element={<SkillsPage />} />
 							<Route path="/portfolio" element={<PortfolioPage />} />
 							<Route path="/contact" element={<ProfilePage />} />
-							<Route path="*" element={<Navigate to="/skills" />} />
+							<Route path="*" element={<Navigate to="/experience" />} />
 						</Routes>
 					</Router>
 				</ProfileContextProvider>

@@ -1,28 +1,45 @@
 import { useState, useEffect } from "react";
 
-import { IPortfolioData } from "./Portfolio.interfaces";
-import { getPortfolioLocal } from "../../Portfolio.service";
+import { IPortfolioData } from "../../Portfolio.interfaces";
+import { getActiveReposFromGitHub } from "../../Portfolio.service";
 
 import './Portfolio.scss';
 
 const Portfolio = (props: any) => {
-	const [portfolio, setPortfolio] = useState([]);
+	const [portfolios, setPortfolios] = useState([]);
 
 	useEffect(() => {
-		getPortfolioLocal().then((resp) => {
+		getActiveReposFromGitHub().then((resp) => {
 			console.log('Portfolios Loaded: ', resp);
-			setPortfolio(resp.data);
+			setPortfolios(resp);
 		});
 	}, []);
 
 	return (
 		<div id="portfolios">
-				{portfolio!.length > 0 ? portfolio!.map((portfolio: IPortfolioData) => (
+				{portfolios!.length > 0 ? portfolios!.map((portfolio: IPortfolioData) => (
 					<div className="portfolio" key={portfolio.id}>
 						<div className="details">
-							<div className="name">{portfolio.name}</div>
+							<div className="heading">
+								<div className="name">{portfolio['name']}</div>
+								<div className="links">
+									<span className="demo"><a target="_blank" rel="noreferrer" href={portfolio['homepage']}>Demo</a></span>
+									<span className="code"><a target="_blank" rel="noreferrer" href={portfolio['html_url']}>Code</a></span>
+								</div>
+							</div>
+
 							<div className="description">{portfolio.description}</div>
+							{portfolio['topics']!.length > 0 && <div className="topics">
+								{portfolio['topics']!.map((topic: string) => (
+									<span className="topic" key={topic.toString()}>{topic}</span>
+								))}
+							</div>}
 						</div>
+						{/* <div className="assets">
+							<div className="image">
+								{portfolio['homepage'] && <img alt="website screenshot" src={"//image.thum.io/get/" + portfolio['homepage']} />}
+							</div>
+						</div> */}
 					</div>
 				)) : <div>{"No portfolio available"}</div> }
 		</div>

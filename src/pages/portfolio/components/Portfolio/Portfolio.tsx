@@ -12,9 +12,9 @@ const Portfolio = (props: any) => {
 								<div className="name">
 									<a className="name-link tooltip" title="View the Code" target="_blank" rel="noreferrer" href={portfolio['html_url']}>{portfolio['name']}</a>
 								</div>
-								<div className="links">
+								{portfolio['homepage'] && <div className="links">
 									<span className="demo"><a target="_blank" rel="noreferrer" href={portfolio['homepage']}>Demo</a></span>
-								</div>
+								</div>}
 							</div>
 
 							<div className="description">{portfolio.description}</div>

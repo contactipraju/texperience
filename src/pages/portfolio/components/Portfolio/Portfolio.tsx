@@ -1,23 +1,11 @@
-import { useState, useEffect } from "react";
-
-import { IPortfolioData } from "../../Portfolio.interfaces";
-import { getActiveReposFromGitHub } from "../../Portfolio.service";
-
 import './Portfolio.scss';
 
+import { IPortfolioData } from '../../Portfolio.interfaces';
+
 const Portfolio = (props: any) => {
-	const [portfolios, setPortfolios] = useState([]);
-
-	useEffect(() => {
-		getActiveReposFromGitHub().then((resp) => {
-			console.log('Portfolios Loaded: ', resp);
-			setPortfolios(resp);
-		});
-	}, []);
-
 	return (
 		<div id="portfolios">
-				{portfolios!.length > 0 ? portfolios!.map((portfolio: IPortfolioData) => (
+				{props.portfolios!.length > 0 ? props.portfolios!.map((portfolio: IPortfolioData) => (
 					<div className="portfolio" key={portfolio.id}>
 						<div className="details">
 							<div className="heading">

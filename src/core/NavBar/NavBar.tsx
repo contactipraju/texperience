@@ -8,23 +8,23 @@ function NavBar() {
 			<nav>
 				<ul>
 					<li>
-						<NavLink to="/portfolio"
+						<NavLink to='/portfolio'
 							className={({isActive, isPending }) =>
-							isPending ? "pending" : isActive ? "active" : ""
+							isPending ? 'pending' : isActive ? 'active' : ''
 						}
 						> Portfolio </NavLink>
 					</li>
 					<li>
-						<NavLink to="/experience"
+						<NavLink to='/experience'
 							className={({isActive, isPending }) =>
-							isPending ? "pending" : isActive ? "active" : ""
+							isPending ? 'pending' : isActive ? 'active' : ''
 						}
 						> Experience </NavLink>
 					</li>
 					<li>
-						<NavLink to="/contact"
+						<NavLink to='/contact'
 							className={({isActive, isPending }) =>
-							isPending ? "pending" : isActive ? "active" : ""
+							isPending ? 'pending' : isActive ? 'active' : ''
 						}
 						> Contact </NavLink>
 					</li>

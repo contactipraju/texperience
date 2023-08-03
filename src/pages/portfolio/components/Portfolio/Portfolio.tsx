@@ -21,10 +21,11 @@ const Portfolio = (props: any) => {
 					<div className="portfolio" key={portfolio.id}>
 						<div className="details">
 							<div className="heading">
-								<div className="name">{portfolio['name']}</div>
+								<div className="name">
+									<a className="name-link tooltip" title="View the Code" target="_blank" rel="noreferrer" href={portfolio['html_url']}>{portfolio['name']}</a>
+								</div>
 								<div className="links">
 									<span className="demo"><a target="_blank" rel="noreferrer" href={portfolio['homepage']}>Demo</a></span>
-									<span className="code"><a target="_blank" rel="noreferrer" href={portfolio['html_url']}>Code</a></span>
 								</div>
 							</div>
 
@@ -34,12 +35,13 @@ const Portfolio = (props: any) => {
 									<span className="topic" key={topic.toString()}>{topic}</span>
 								))}
 							</div>}
+
+							{/* <div className="assets">
+								<div className="image">
+									{portfolio['homepage'] && <img alt="website screenshot" src={"//image.thum.io/get/" + portfolio['homepage']} />}
+								</div>
+							</div> */}
 						</div>
-						{/* <div className="assets">
-							<div className="image">
-								{portfolio['homepage'] && <img alt="website screenshot" src={"//image.thum.io/get/" + portfolio['homepage']} />}
-							</div>
-						</div> */}
 					</div>
 				)) : <div>{"No portfolio available"}</div> }
 		</div>

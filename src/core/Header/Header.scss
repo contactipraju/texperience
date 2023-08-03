@@ -1,23 +1,26 @@
 
 .header {
 	display: flex;
-	height: 70px;
 
 	gap: 2rem;
-	padding: 1rem;
+	padding: 14px;
 
-	color: white;
-	background-color: #444;
+	color: #eee;
+	background-color: black;
 
 	align-items: stretch;
 	justify-content: space-between;
 
 	.site-title {
 		display: flex;
-		align-items: center;
-
 		color: inherit;
-		font-size: 2rem;
+		align-items: center;
+		text-decoration: none;
+
+		.profile-name {
+			font-size: 22px;
+			font-weight: 500;
+		}
 	}
 
 	.details {
@@ -25,9 +28,13 @@
 		text-align: right;
 		text-decoration: none;
 
-		a {
+		img.icon-image {
+			vertical-align: bottom;
+		}
+
+		span, a {
+			margin: 8px;
 			color: white;
-	
 		}
 	}
 }

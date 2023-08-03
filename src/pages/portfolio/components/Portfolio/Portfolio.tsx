@@ -6,11 +6,10 @@ import { getActiveReposFromGitHub } from "../../Portfolio.service";
 import './Portfolio.scss';
 
 const Portfolio = (props: any) => {
-	const [portfolios, setPortfolios] = useState([]);
+	const [portfolios, setPortfolios] = useState<IPortfolioData[]>([]);
 
 	useEffect(() => {
-		getActiveReposFromGitHub().then((resp) => {
-			console.log('Portfolios Loaded: ', resp);
+		getActiveReposFromGitHub().then((resp: IPortfolioData[]) => {
 			setPortfolios(resp);
 		});
 	}, []);

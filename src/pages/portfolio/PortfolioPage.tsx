@@ -1,9 +1,9 @@
 import './PortfolioPage.scss';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import { IPortfolioData } from "./Portfolio.interfaces";
-import { getActiveReposFromGitHub } from "./Portfolio.service";
+import { IPortfolioData } from './Portfolio.interfaces';
+import { getActiveReposFromGitHub } from './Portfolio.service';
 
 import Portfolio from './components/Portfolio/Portfolio';
 
@@ -18,9 +18,9 @@ const PortfolioPage = () => {
 
 	return (
 		<div id='portfolio-page'>
-			<div className='heading'>My public repos stored and hosted on GitHub</div>
+			<div className='portfolio-page-heading'>My GitHub repos</div>
 
-			<div className="content">
+			<div className='content'>
 				<Portfolio portfolios={portfolios}/>
 			</div>
 		</div>

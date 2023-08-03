@@ -48,6 +48,12 @@ const ProfileForm = (props: any) => {
 				name: 'github',
 				label: 'GitHub Url',
 				initialValue: profile.github,
+			},
+			{
+				component: componentTypes.TEXT_FIELD,
+				name: 'website',
+				label: 'Website',
+				initialValue: profile.website,
 			}
 		]
 	};

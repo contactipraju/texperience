@@ -9,6 +9,7 @@ export interface ProfileInfo {
 	email: string;
 	linkedin: string;
 	github: string;
+	website: string;
 }
 
 export interface IProfileContext {

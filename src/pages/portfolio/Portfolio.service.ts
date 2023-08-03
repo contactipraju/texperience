@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { IPortfolioData } from "./Portfolio.interfaces";
+import { IPortfolioData } from './Portfolio.interfaces';
 
 export async function getPortfolioLocal() {
 	const resp = await axios.get('json/portfolio.json');

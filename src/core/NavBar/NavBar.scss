@@ -20,17 +20,17 @@ nav {
 				padding: 5px;
 				font-weight: 500;
 		
-				color: #777;
+				color: #eee;
 				align-items: center;
 				text-decoration: none;
 			}
 
-			a.hover {
+			a:hover {
 				background-color: #777;
+				border-radius: 5px;
 			}
 	
 			a.active {
-				color: #eee;
 				font-weight: 600;
 				border-bottom: solid 3px rgb(247, 129, 102);
 			}

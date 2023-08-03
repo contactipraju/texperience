@@ -27,7 +27,7 @@ const ProfilePage = () => {
 
 			<div className="container">
 				<div className='lhs'>
-					<div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="prasadaraju" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/prasadaraju?trk=profile-badge"></a></div>
+					<div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="prasadaraju" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/prasadaraju?trk=profile-badge"> </a></div>
 				</div>
 				<div className='rhs'>
 					<ProfileForm />

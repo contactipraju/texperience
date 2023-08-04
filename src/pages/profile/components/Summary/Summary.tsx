@@ -13,9 +13,9 @@ const Summary = (props: any) => {
 		{
 			title: 'Experience includes',
 			points: [
-				{ text: 'Working in Multidisciplinary and Cross-functional teams, with Clients, Product Managers, Designers, Backend Developers, all from different geographies'},
 				{ text: 'Working for MNCs / Product Companies (Microsoft, Specialized, Morningstar etc)'},
 				{ text: 'Working in Startups (Divami, eureQa, Ahoy Club, Todays Plan etc), often closely with Co-founders'},
+				{ text: 'Working in Multidisciplinary and Cross-functional teams, with Clients, Product Managers, Designers, Backend Developers, all from different geographies'},
 				{ text: '8 years in Developing applications on all major Mobile Development Platforms including PalmOS, PocketPCs, Embedded Linux phones, Windows Mobile etc'}
 			]
 		},
@@ -30,7 +30,7 @@ const Summary = (props: any) => {
 				{ heading: 'DevOps best practices', text: 'CI/CD Automation, Test Automation and Continuous Deployment'},
 				{ heading: 'Frontend dev tools', text: ' Node, NPM, Yarn, Webpack, Babel, Grunt, Gulp, Git etc'},
 				{ heading: 'Code optimization tools', text: 'SonarCloud, BugSnag, Google Analytics etc'},
-				{ heading: 'Software development processes', text: 'TDD, BDD, Agile &amp; Kanban Methodologies'},
+				{ heading: 'Software development processes', text: 'TDD, BDD, Agile, Kanban Methodologies'},
 				{ heading: 'Designing', text: 'Interaction Designs, Style-guides and Design Systems'},
 				{ heading: 'CSS', text: 'Responsive Web Designs, UI Libraries, CSS Preprocessors'}
 			]

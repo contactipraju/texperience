@@ -6,4 +6,5 @@ export interface IPortfolioData {
 	topics?: string[];
 	html_url?: string;
 	archived?: boolean;
+	pushed_at: Date;
 }

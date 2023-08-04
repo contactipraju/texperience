@@ -1,14 +1,10 @@
 import axios from 'axios';
 import { IPortfolioData } from './Portfolio.interfaces';
 
-export async function getPortfolioLocal() {
-	const resp = await axios.get('json/portfolio.json');
-	return resp.data;
-}
-
 function processRepos(data: IPortfolioData[]) {
 	let results: IPortfolioData[] = [];
 
+	// Pick only what we are interested in
 	for (let i=0; i<data.length; i++) {
 		let rec: IPortfolioData = data[i];
 		if (!rec.archived && rec['name'].localeCompare('contactipraju')) {
@@ -19,13 +15,18 @@ function processRepos(data: IPortfolioData[]) {
 				homepage: rec.homepage,
 				topics: rec.topics,
 				html_url: rec.html_url,
-				archived: rec.archived
+				archived: rec.archived,
+				pushed_at: rec.pushed_at
 			});
 		}
 	}
 
-	console.log('Portfolios Filtered: ', results);
+	// Sort the records on last pushed date by default
+	results.sort(function(a:IPortfolioData, b:IPortfolioData) {
+		return new Date(b['pushed_at']).getTime() - new Date(a['pushed_at']).getTime();
+	});
 
+	console.log('Portfolios Filtered: ', results);
 	return results;
 }
 

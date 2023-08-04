@@ -1,0 +1,33 @@
+#downloads {
+	padding: 5px;
+
+	.download {
+		padding: 5px;
+		text-align: left;
+
+		display: flex;
+		flex-direction: row;
+
+		.title {
+			width: 80px;
+			margin: 5px;
+			padding: 5px;
+			font-size: 14px;
+			text-align: right;
+		}
+
+		.link {
+			margin: 5px;
+			padding: 5px;
+			height: 20px;
+			background-color: lightgray;
+			border: 1px solid lightgray;
+			border-radius: 5px;
+			min-width: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-weight: bold;
+			color: green;
+		}
+	}
+}

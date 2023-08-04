@@ -65,6 +65,8 @@ const ProfileForm = (props: any) => {
 
 	return (
 		<div id="profile-form">
+			{/* <div className='desc'> Changes done here reflect across the app, as they're stored in global store (using Context API) </div> */}
+
 			<div className="content">
 				{!isLoading && 
 					<FormRenderer

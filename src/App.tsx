@@ -20,10 +20,10 @@ function App() {
 						<NavBar />
 
 						<Routes>
+							<Route path="/profile" element={<ProfilePage />} />
+							<Route path="/skills" element={<SkillsPage />} />
 							<Route path="/portfolio" element={<PortfolioPage />} />
-							<Route path="/experience" element={<SkillsPage />} />
-							<Route path="/contact" element={<ProfilePage />} />
-							<Route path="*" element={<Navigate to="/portfolio" />} />
+							<Route path="*" element={<Navigate to="/profile" />} />
 						</Routes>
 					</Router>
 				</ProfileContextProvider>

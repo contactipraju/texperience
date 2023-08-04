@@ -8,25 +8,25 @@ function NavBar() {
 			<nav>
 				<ul>
 					<li>
+						<NavLink to='/profile'
+							className={({isActive, isPending }) =>
+							isPending ? 'pending' : isActive ? 'active' : ''
+						}
+						> Summary </NavLink>
+					</li>
+					<li>
+						<NavLink to='/skills'
+							className={({isActive, isPending }) =>
+							isPending ? 'pending' : isActive ? 'active' : ''
+						}
+						> Skills </NavLink>
+					</li>
+					<li>
 						<NavLink to='/portfolio'
 							className={({isActive, isPending }) =>
 							isPending ? 'pending' : isActive ? 'active' : ''
 						}
 						> Portfolio </NavLink>
-					</li>
-					<li>
-						<NavLink to='/experience'
-							className={({isActive, isPending }) =>
-							isPending ? 'pending' : isActive ? 'active' : ''
-						}
-						> Experience </NavLink>
-					</li>
-					<li>
-						<NavLink to='/contact'
-							className={({isActive, isPending }) =>
-							isPending ? 'pending' : isActive ? 'active' : ''
-						}
-						> Contact </NavLink>
 					</li>
 				</ul>
 			</nav>

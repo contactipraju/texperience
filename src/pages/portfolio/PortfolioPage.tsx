@@ -18,7 +18,9 @@ const PortfolioPage = () => {
 
 	return (
 		<div id='portfolio-page'>
-			<div className='portfolio-page-heading'>My GitHub repos</div>
+			<div className='portfolio-page-heading'>
+				Some of my GitHub projects that I regularly contribute to:
+			</div>
 
 			<div className='content'>
 				<Portfolio portfolios={portfolios}/>

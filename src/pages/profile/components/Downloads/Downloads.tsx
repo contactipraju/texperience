@@ -1,5 +1,7 @@
 import './Downloads.scss';
 
+import { saveDownload } from '../../../../core/firebase/firestore.service';
+
 const Downloads = (props: any) => {
 	const data = [
 		{
@@ -18,6 +20,10 @@ const Downloads = (props: any) => {
 		}
 	];
 
+	const download = (e:any) => {
+		saveDownload(e);
+	}
+
 	return (
 		<div id='downloads'>
 			{data.length > 0 ? data.map((section) => (
@@ -25,7 +31,7 @@ const Downloads = (props: any) => {
 					<span className='title'>{section['title']}:</span>
 
 					{section['links'].length > 0 ? section['links'].map((link) => (
-						<a key={link['url']} className='link' title='Click to download' href={link['url']} download>{link['title']}</a>
+						<a key={link['url']} onClick={download} className='link' title='Click to download' href={link['url']} download>{link['title']}</a>
 					)): ''}
 				</div>
 			)) : ''}

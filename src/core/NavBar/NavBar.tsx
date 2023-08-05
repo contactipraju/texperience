@@ -2,13 +2,19 @@ import { NavLink } from 'react-router-dom';
 
 import './NavBar.scss';
 
+import { LogEvent }  from '../firebase/firestore.service';
+
 function NavBar() {
+	const useLinkClickHandler = (e:any) => {
+		LogEvent('page_view', e.view.location.href);
+	};
+
 	return (
 		<div>
 			<nav>
-				<ul>
+				<ul onClick={useLinkClickHandler}>
 					<li>
-						<NavLink to='/profile'
+						<NavLink to='/summary'
 							className={({isActive, isPending }) =>
 							isPending ? 'pending' : isActive ? 'active' : ''
 						}

@@ -7,23 +7,25 @@ import { addDoc, collection } from "@firebase/firestore";
 
 import { analytics } from '../firebase/firebase';
 
-export async function getUserData() {
-	const user = await axios.get('http://ip-api.com/json');
-	return user.data;
+function isLocalHost() {
+	return (["localhost", "127.0.0.1", ""].includes(window.location.hostname));
 }
 
-export async function LogEvent(type: any, data: any) {
-	const user = await getUserData();
-
-	// Log to Firebase Analytics:
-	logEvent(analytics, type, user);
-
-	// Log into DB:
-	user['_data'] = data;
-	logEventToDB(type, user);
+function getUserDataUrl() {
+	// Since Firebase only allows connections to https,
+	// we use a different api though it provides less information
+	return isLocalHost() ? 'http://ip-api.com/json' : 'https://api.db-ip.com/v2/free/self';
 }
 
-export const logEventToDB = (type: string, data: any) => {
+async function getUserData() {
+	const user = await axios.get(getUserDataUrl());
+	return {...user.data, _time: new Date()};
+}
+
+function logEventToDB(_type: string, data: any) {
+	let type = _type;
+	type += isLocalHost() ? "_local" : "";
+
 	const ref = collection(firestore, type);
 
 	try {
@@ -33,18 +35,15 @@ export const logEventToDB = (type: string, data: any) => {
 	}
 }
 
-export async function saveDownload(e: any) {
+export async function LogEvent(url: any, type: string) {
 	const user = await getUserData();
-	user['_url'] = e.target.href;
-	saveDownloadToDB(user);
-}
+	user['_url'] = url;
 
-const saveDownloadToDB = (load: any) => {
-	const ref = collection(firestore, "resume_downloads")
-
-	try {
-		addDoc(ref, load)
-	} catch(err) {
-		console.log(err)
+	// Log to Firebase Analytics, except download events
+	if (type.localeCompare('resume_downloads')) {
+		logEvent(analytics, type, user);
 	}
+
+	// Log into DB:
+	logEventToDB(type, user);
 }

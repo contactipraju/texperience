@@ -1,6 +1,6 @@
 import './Downloads.scss';
 
-import { saveDownload } from '../../../../core/firebase/firestore.service';
+import { LogEvent } from '../../../../core/firebase/firestore.service';
 
 const Downloads = (props: any) => {
 	const data = [
@@ -21,7 +21,7 @@ const Downloads = (props: any) => {
 	];
 
 	const download = (e:any) => {
-		saveDownload(e);
+		LogEvent(e.target.href, 'resume_downloads');
 	}
 
 	return (

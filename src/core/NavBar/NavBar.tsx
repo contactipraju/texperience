@@ -6,7 +6,7 @@ import { LogEvent }  from '../firebase/firestore.service';
 
 function NavBar() {
 	const useLinkClickHandler = (e:any) => {
-		LogEvent('page_view', e.view.location.href);
+		LogEvent(e.view.location.href, 'page_view');
 	};
 
 	return (

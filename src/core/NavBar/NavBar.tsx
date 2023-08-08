@@ -34,6 +34,13 @@ function NavBar() {
 						}
 						> Portfolio </NavLink>
 					</li>
+					<li>
+						<NavLink to='/projects'
+							className={({isActive, isPending }) =>
+							isPending ? 'pending' : isActive ? 'active' : ''
+						}
+						> Projects </NavLink>
+					</li>
 				</ul>
 			</nav>
 		</div>

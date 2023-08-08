@@ -1,0 +1,80 @@
+.project {
+	height: 300px;
+
+	text-align: left;
+	border: 1px solid #444;
+	border-radius: 5px;
+
+	padding: 10px;
+	margin: 10px;
+
+	.details {
+		position: relative;
+		height: 100%;
+		padding: 4px;
+
+		.heading {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			justify-content: space-between;
+
+			.name {
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 30px;
+			}
+		}
+
+		.description {
+			font-style: italic;
+			font-size: smaller;
+			color: rgb(125, 133, 144);
+		}
+
+		.technologies {
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+			text-align: left;
+
+			.technology {
+				font-size: 12px;
+				font-weight: 600;
+
+				padding: 3px 10px 3px 10px;
+				margin: 0 .125em .333em 0;
+
+				line-height: 22px;
+
+				color: rgb(47, 129, 247);
+				background-color: rgba(56, 139, 253, 0.1);
+
+				border: 1px solid rgba(56, 139, 253, 0.1);
+				border-radius: 2em;
+			}
+		}
+
+		.links {
+
+		}
+
+		.videos {
+
+		}
+
+		.assets {
+			height: 210px;
+			margin-top: 5px;
+
+			.image {
+				width: 100%;
+				height: 100%;
+
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}

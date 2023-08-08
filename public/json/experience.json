@@ -22,9 +22,45 @@
 			"company": "Todays Plan",
 			"from": "23 July 2016",
 			"to": "30 Apr 2018",
+			"website": ["https://www.todaysplan.com.au"],
 			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
 				{"skill": "AngularJS", "duration": ["2016-07-23", "2018-04-30"]},
 				{"skill": "Angular", "duration": ["2017-10-23", "2018-04-30"]}
+			],
+			"projects": [
+				{
+					"id": "tp-01",
+					"name" : "Today's Plan Platform",
+					"description": "A Single-page-application that helps cyclists and their coaches collaborate, plan, track and analyze training with clear goals of performance optimization",
+					"details": [],
+					"roles": [],
+					"links": ["https://whats.todaysplan.com.au/en"],
+					"images": [],
+					"videos": [],
+					"technologies": []
+				},
+				{
+					"id": "tp-02",
+					"name" : "Customizable Dashboards",
+					"description": "Helps users Create, Edit, Customize Dashboards based on their individual preferences",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [],
+					"videos": ["https://www.youtube.com/watch?v=gNlikaJSwp0"],
+					"technologies": []
+				},
+				{
+					"id": "tp-03",
+					"name" : "Calendar",
+					"description": "Today’s Plan’s core area of user interactions",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [],
+					"videos": ["https://www.youtube.com/watch?v=xSO297Rbeow"],
+					"technologies": []
+				}
 			]
 		},
 		{
@@ -33,15 +69,9 @@
 			"to": "31 Oct 2018",
 			"skills": [
 				{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
-				{
-					"skill": "AngularJS", "duration": ["2018-05-01", "2018-06-15"]
-				},
-				{
-					"skill": "VueJS", "duration": ["2018-05-01", "2018-11-15"]
-				},
-				{
-					"skill": "NodeJS", "duration": ["2018-05-01", "2018-11-15"]
-				}
+				{"skill": "AngularJS", "duration": ["2018-05-01", "2018-06-15"]},
+				{"skill": "VueJS", "duration": ["2018-05-01", "2018-11-15"]},
+				{"skill": "NodeJS", "duration": ["2018-05-01", "2018-11-15"]}
 			]
 		},
 		{
@@ -57,9 +87,83 @@
 		},
 		{
 			"company": "Specialized",
+			"description": "",
 			"from": "18 Nov 2019",
 			"to": "20 Jan 2023",
-			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "Angular" }, { "skill": "NgRx" }, { "skill": "RxJS" }]
+			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "AngularJS" }, { "skill": "Angular" }, { "skill": "OnsenUI" }, { "skill": "NgRx" }, { "skill": "RxJS" }],
+			"contribution": [
+				"Joined as one of the earliest employees at this Canberra based startup",
+				"Worked in close collaboration with the Founders",
+				"Built Beautiful, Robust and Engaging core-components",
+				"Helped develop the platform that now has millions of users"
+			],
+			"projects": [
+				{
+					"id": "tp-01",
+					"name" : "Content Feed",
+					"description": "Developed Initially for Specialized, and later repurposed for Today’s Plan users, this feature helps admins Create, Edit, Publish content to targeted cyclists, so they can read it on their feed inside Rider-Hub or Ride-App. Features include: Image editor, WYSIWYG Editor etc",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [],
+					"videos": ["https://www.youtube.com/watch?v=0a9piZEzklM"],
+					"technologies": []
+				},
+				{
+					"id": "tp-02",
+					"name" : "Route Builder",
+					"description": "Developed Initially for Today’s plan and later repurposed for Specialized users, this feature helps cyclists Create, Edit, Import, Export Routes to devices like Garmin. Users can also associate them to Workouts and Events. More details here: https://www.todaysplan.com.au/routes/",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [],
+					"videos": ["https://www.youtube.com/watch?v=64HQAHCwmW4"],
+					"technologies": []
+				},
+				{
+					"id": "tp-03",
+					"name" : "Rider-Hub",
+					"description": "A web application that helps Specialized consumers view into their ride data and analytics",
+					"details": [
+						"Users can: Participate in Community riding, by searching/subscribing for rides and events at a location of their preference",
+						"Users can: Read targeted content from Specialized; Create/Import/Export Routes; Associate Bikes, Equipment etc to Rides; Look into the Metrics over selected periods"
+					],
+					"roles": [],
+					"links": ["https://ride.specialized.com"],
+					"images": [],
+					"videos": [],
+					"technologies": []
+				},
+				{
+					"id": "tp-04",
+					"name" : "Ride-App",
+					"description": "Developed Specialized component app for riders to get the most out of their cycling experience",
+					"details": [
+						"Uses Rider-hub code inside iOS and Android versions (Hybrid using Webviews) of the Specialized Ride app, saving Specialized a lot of resources and re-work",
+						"Core developer from Today’s Plan, the Australian counter part, and later handed it over to 2-3 developers based in US",
+						"The native parts of the app has been developed in US, which talks to the Cycling sensors over Bluetooth, Ant+ etc"
+					],
+					"roles": [],
+					"links": ["https://www.specialized.com/us/en/app"],
+					"images": [],
+					"videos": [],
+					"technologies": []
+				},
+				{
+					"id": "tp-05",
+					"name" : "Admin Portal",
+					"description": "One stop for all the Authentication and Authorization needs of Specialized internal (admins) and external (retailers) users",
+					"details": [
+						"Portal helps Specialized users do the admin operations like Bike Registrations, Provisioning 3rd party keys enabling them to develop sports apps using Today’s Plan’s proprietary backend api (that crunches on the ride files of over a dozen formats) etc.",
+						"Uses Single Sign-in (with SAML and OAuth)"
+					],
+					"roles": [],
+					"links": ["admin.specialized.com", "auth.specialized.com"],
+					"images": [],
+					"videos": [],
+					"technologies": []
+				}
+			]
 		},
 		{
 			"company": "Vision21",

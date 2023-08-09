@@ -1,4 +1,4 @@
-export interface IProjectData {
+export interface IRoleData {
 	id: string;
 	name: string;
 	description?: string;

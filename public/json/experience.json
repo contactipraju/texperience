@@ -20,12 +20,18 @@
 		},
 		{
 			"company": "Todays Plan",
+			"description": "A Highly interactive SPA, that helps coaches and athletes collaborate, plan, track and analyze training with clear goals of performance optimization",
 			"from": "23 July 2016",
 			"to": "30 Apr 2018",
 			"website": ["https://www.todaysplan.com.au"],
 			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
 				{"skill": "AngularJS", "duration": ["2016-07-23", "2018-04-30"]},
 				{"skill": "Angular", "duration": ["2017-10-23", "2018-04-30"]}
+			],
+			"contribution": [
+				"Joined as one of the earliest employees at this Canberra based startup",
+				"Built Beautiful, Robust and Engaging core-components",
+				"Worked in close collaboration with the Founders and Helped develop the platform that now has millions of users"
 			],
 			"projects": [
 				{
@@ -34,9 +40,11 @@
 					"description": "A Single-page-application that helps cyclists and their coaches collaborate, plan, track and analyze training with clear goals of performance optimization",
 					"details": [],
 					"roles": [],
-					"links": ["https://whats.todaysplan.com.au/en"],
+					"links": [
+						{ "label": "Today's Plan", "url": "https://whats.todaysplan.com.au/en" }
+					],
 					"images": [],
-					"videos": [],
+					"videos": ["hghf_tdRKwk"],
 					"technologies": []
 				},
 				{
@@ -47,7 +55,7 @@
 					"roles": [],
 					"links": [],
 					"images": [],
-					"videos": ["https://www.youtube.com/watch?v=gNlikaJSwp0"],
+					"videos": ["gNlikaJSwp0"],
 					"technologies": []
 				},
 				{
@@ -58,7 +66,22 @@
 					"roles": [],
 					"links": [],
 					"images": [],
-					"videos": ["https://www.youtube.com/watch?v=xSO297Rbeow"],
+					"videos": ["xSO297Rbeow"],
+					"technologies": []
+				},
+				{
+					"id": "tp-04",
+					"name" : "Stages Dash Layout Editor",
+					"description": "Multi-screen Layout editor",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [
+						{ "label": "Stages Dash Layout Editor - image 01", "imgPath": "/images/roles/projects/tp-04/tp-04-01.jpeg" },
+						{ "label": "Stages Dash Layout Editor - image 02", "imgPath": "/images/roles/projects/tp-04/tp-04-02.jpeg" },
+						{ "label": "Stages Dash Layout Editor - image 03", "imgPath": "/images/roles/projects/tp-04/tp-04-03.jpeg" }
+					],
+					"videos": [],
 					"technologies": []
 				}
 			]
@@ -87,41 +110,41 @@
 		},
 		{
 			"company": "Specialized",
-			"description": "",
+			"description": "Built technologies that helped athletes perform better, using the biggest online endurance sports training platform and API",
 			"from": "18 Nov 2019",
 			"to": "20 Jan 2023",
+			"website": ["https://www.specialized.com/au/en"],
 			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "AngularJS" }, { "skill": "Angular" }, { "skill": "OnsenUI" }, { "skill": "NgRx" }, { "skill": "RxJS" }],
 			"contribution": [
-				"Joined as one of the earliest employees at this Canberra based startup",
-				"Worked in close collaboration with the Founders",
-				"Built Beautiful, Robust and Engaging core-components",
-				"Helped develop the platform that now has millions of users"
+				"Made Architectural changes to enable RiderHub to be embedded into Android and iOS app (Ride) using Webviews",
+				"Reduced Development costs, Maintenance costs, and the release cycles with single code-base for multiple platforms",
+				"Acted as single point of contact for multiple projects, doing Enhancements, Code-refactoring, Reducing Tech-debt etc"
 			],
 			"projects": [
 				{
-					"id": "tp-01",
+					"id": "sp-01",
 					"name" : "Content Feed",
 					"description": "Developed Initially for Specialized, and later repurposed for Today’s Plan users, this feature helps admins Create, Edit, Publish content to targeted cyclists, so they can read it on their feed inside Rider-Hub or Ride-App. Features include: Image editor, WYSIWYG Editor etc",
 					"details": [],
 					"roles": [],
 					"links": [],
 					"images": [],
-					"videos": ["https://www.youtube.com/watch?v=0a9piZEzklM"],
+					"videos": ["0a9piZEzklM"],
 					"technologies": []
 				},
 				{
-					"id": "tp-02",
+					"id": "sp-02",
 					"name" : "Route Builder",
 					"description": "Developed Initially for Today’s plan and later repurposed for Specialized users, this feature helps cyclists Create, Edit, Import, Export Routes to devices like Garmin. Users can also associate them to Workouts and Events. More details here: https://www.todaysplan.com.au/routes/",
 					"details": [],
 					"roles": [],
 					"links": [],
 					"images": [],
-					"videos": ["https://www.youtube.com/watch?v=64HQAHCwmW4"],
+					"videos": ["64HQAHCwmW4"],
 					"technologies": []
 				},
 				{
-					"id": "tp-03",
+					"id": "sp-03",
 					"name" : "Rider-Hub",
 					"description": "A web application that helps Specialized consumers view into their ride data and analytics",
 					"details": [
@@ -129,13 +152,24 @@
 						"Users can: Read targeted content from Specialized; Create/Import/Export Routes; Associate Bikes, Equipment etc to Rides; Look into the Metrics over selected periods"
 					],
 					"roles": [],
-					"links": ["https://ride.specialized.com"],
-					"images": [],
+					"links": [
+						{"label" : "Rider Hub", "url": "https://ride.specialized.com"}
+					],
+					"images": [
+						{ "label": "Specialized Rider Hub - image 01", "imgPath": "/images/roles/projects/sp-03/sp-03-01.png" },
+						{ "label": "Specialized Rider Hub - image 02", "imgPath": "/images/roles/projects/sp-03/sp-03-02.png" },
+						{ "label": "Specialized Rider Hub - image 03", "imgPath": "/images/roles/projects/sp-03/sp-03-03.png" },
+						{ "label": "Specialized Rider Hub - image 04", "imgPath": "/images/roles/projects/sp-03/sp-03-04.png" },
+						{ "label": "Specialized Rider Hub - image 05", "imgPath": "/images/roles/projects/sp-03/sp-03-05.png" },
+						{ "label": "Specialized Rider Hub - image 06", "imgPath": "/images/roles/projects/sp-03/sp-03-06.png" },
+						{ "label": "Specialized Rider Hub - image 07", "imgPath": "/images/roles/projects/sp-03/sp-03-07.png" },
+						{ "label": "Specialized Rider Hub - image 08", "imgPath": "/images/roles/projects/sp-03/sp-03-08.png" }
+					],
 					"videos": [],
 					"technologies": []
 				},
 				{
-					"id": "tp-04",
+					"id": "sp-04",
 					"name" : "Ride-App",
 					"description": "Developed Specialized component app for riders to get the most out of their cycling experience",
 					"details": [
@@ -144,13 +178,21 @@
 						"The native parts of the app has been developed in US, which talks to the Cycling sensors over Bluetooth, Ant+ etc"
 					],
 					"roles": [],
-					"links": ["https://www.specialized.com/us/en/app"],
-					"images": [],
+					"links": [
+						{"label" : "Ride App", "url": "https://www.specialized.com/us/en/app"}
+					],
+					"images": [
+						{ "label": "Specialized Ride App - image 01", "imgPath": "/images/roles/projects/sp-04/sp-04-01.png" },
+						{ "label": "Specialized Ride App - image 02", "imgPath": "/images/roles/projects/sp-04/sp-04-02.png" },
+						{ "label": "Specialized Ride App - image 03", "imgPath": "/images/roles/projects/sp-04/sp-04-03.png" },
+						{ "label": "Specialized Ride App - image 04", "imgPath": "/images/roles/projects/sp-04/sp-04-04.png" },
+						{ "label": "Specialized Ride App - image 05", "imgPath": "/images/roles/projects/sp-04/sp-04-05.png" }
+					],
 					"videos": [],
 					"technologies": []
 				},
 				{
-					"id": "tp-05",
+					"id": "sp-05",
 					"name" : "Admin Portal",
 					"description": "One stop for all the Authentication and Authorization needs of Specialized internal (admins) and external (retailers) users",
 					"details": [
@@ -158,8 +200,12 @@
 						"Uses Single Sign-in (with SAML and OAuth)"
 					],
 					"roles": [],
-					"links": ["admin.specialized.com", "auth.specialized.com"],
-					"images": [],
+					"links": [
+						{"label" : "Admin Portal", "url": "admin.specialized.com"}
+					],
+					"images": [
+						{ "label": "Specialized Admin Portal", "imgPath": "/images/roles/projects/sp-05/sp-05-01.png" }
+					],
 					"videos": [],
 					"technologies": []
 				}

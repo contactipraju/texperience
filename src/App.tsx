@@ -10,7 +10,7 @@ import { ProfileContextProvider } from './pages/profile/ProfileContext';
 import PortfolioPage from './pages/portfolio/PortfolioPage';
 import SkillsPage    from './pages/skills/SkillsPage';
 import ProfilePage   from './pages/profile/ProfilePage';
-import ProjectsPage  from './pages/projects/ProjectsPage';
+import ExperiencePage  from './pages/experience/ExperiencePage';
 
 function App() {
 		return (
@@ -23,8 +23,8 @@ function App() {
 						<Routes>
 							<Route path="/summary" element={<ProfilePage />} />
 							<Route path="/skills" element={<SkillsPage />} />
+							<Route path="/experience" element={<ExperiencePage />} />
 							<Route path="/portfolio" element={<PortfolioPage />} />
-							<Route path="/projects" element={<ProjectsPage />} />
 							<Route path="*" element={<Navigate to="/summary" />} />
 						</Routes>
 					</Router>

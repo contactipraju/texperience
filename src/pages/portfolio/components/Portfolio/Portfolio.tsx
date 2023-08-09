@@ -23,11 +23,11 @@ const Portfolio = (props: any) => {
 									<span className='topic' key={topic.toString()}>{topic}</span>
 								))}
 							</div>}
+						</div>
 
-							<div className='assets'>
-								{/* {portfolio['homepage'] && <img alt='website screenshot' src={'//image.thum.io/get/' + portfolio['homepage']} />} */}
-								<div className='image' style={{ backgroundImage: `url(${'/images/webshots/' + portfolio['name'] + '.png'})` }}> </div>
-							</div>
+						<div className='assets'>
+							{/* {portfolio['homepage'] && <img alt='website screenshot' src={'//image.thum.io/get/' + portfolio['homepage']} />} */}
+							<div className='image' style={{ backgroundImage: `url(${'/images/webshots/' + portfolio['name'] + '.png'})` }}> </div>
 						</div>
 					</div>
 				)) : <div>{'No portfolio available'}</div> }

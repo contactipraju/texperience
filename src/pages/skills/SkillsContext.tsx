@@ -18,6 +18,8 @@ export interface ISkillsContext {
 	setSkills: (skills: SkillsInfo[]) => void;
 	tenure: XAxisAnnotations[];
 	setTenure: (tenure: XAxisAnnotations[]) => void;
+	roles: any[];
+	setRoles: (roles: any[]) => void;
 }
 
 const skillsDefaultValue = {
@@ -30,6 +32,11 @@ const tenureDefaultValue = {
 	setTenure: () => {}
 };
 
+const rolesDefaultValue = {
+	roles: [],
+	setRoles: () => {}
+};
+
 export const SkillsContext = createContext({});
 
 export const SkillsContextProvider = ({ children }: any) => {
@@ -37,11 +44,13 @@ export const SkillsContextProvider = ({ children }: any) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [skills, setSkills] = useState(skillsDefaultValue);
 	const [tenure, setTenure] = useState(tenureDefaultValue);
+	const [roles, setRoles]   = useState(rolesDefaultValue);
 
 	useEffect(() => {
 		getExperiences().then((resp) => {
 			setSkills(resp.skills);
 			setTenure(resp.tenure);
+			setRoles(resp.roles);
 			setIsLoading(false);
 			console.log("Experiences Loaded: ", resp);
 		})
@@ -49,7 +58,7 @@ export const SkillsContextProvider = ({ children }: any) => {
 
 	return (
 		<SkillsContext.Provider value={{
-			isLoading, skills, setSkills, tenure, setTenure
+			isLoading, skills, setSkills, tenure, setTenure, roles, setRoles
 		}}>
 			{children}
 		</SkillsContext.Provider>

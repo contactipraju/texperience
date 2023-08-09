@@ -26,6 +26,7 @@ export async function getExperiences() {
 
 	let skills:any = [];
 	let tenure:any = [];
+	let roles:any = [];
 
 	resp.data.experience.forEach((company:any, index: number) => {
 		let ten: any = {};
@@ -53,7 +54,8 @@ export async function getExperiences() {
 		});
 
 		tenure.push(ten);
+		roles.push(company);
 	});
 
-	return {skills, tenure};
+	return {skills, tenure, roles};
 }

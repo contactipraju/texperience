@@ -28,6 +28,13 @@ function NavBar() {
 						> Skills </NavLink>
 					</li>
 					<li>
+						<NavLink to='/experience'
+							className={({isActive, isPending }) =>
+							isPending ? 'pending' : isActive ? 'active' : ''
+						}
+						> Experience </NavLink>
+					</li>
+					<li>
 						<NavLink to='/portfolio'
 							className={({isActive, isPending }) =>
 							isPending ? 'pending' : isActive ? 'active' : ''

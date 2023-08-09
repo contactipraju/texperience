@@ -46,7 +46,7 @@ function a11yProps(index: number) {
 const ProjectsPage = () => {
 	const [value, setValue] = useState(0);
 
-	const { roles } = useContext(SkillsContext) as ISkillsContext;
+	const { isLoading, roles } = useContext(SkillsContext) as ISkillsContext;
 
 	const handleChange = (event: React.SyntheticEvent, newValue: number) => {
 	  setValue(newValue);
@@ -73,12 +73,12 @@ const ProjectsPage = () => {
 					aria-label="Vertical tabs example"
 					sx={{ borderRight: 1, borderColor: 'divider', minWidth: 200, minHeight: 1100 }}
 				>
-					{roles && roles.length > 0 ? roles.map((role: any, index: any) => (
+					{!isLoading && roles && roles.length > 0 ? roles.map((role: any, index: any) => (
 						<Tab disabled={!role.projects || !role.projects.length} label={role.company + (role.projects && role.projects.length? ' (' + role.projects.length + ')' : '')} key={role.company.toString()} {...a11yProps(index)} />
 					)) : '' }
 				</Tabs>
 
-				{roles && roles.length > 0 ? roles.map((role: any, index: any) => (
+				{!isLoading && roles && roles.length > 0 ? roles.map((role: any, index: any) => (
 					role.projects && role.projects.length && 
 					<TabPanel value={value} index={index} key={role.company.toString()}>
 						<Roles role={role}/>

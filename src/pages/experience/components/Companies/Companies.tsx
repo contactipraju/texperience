@@ -64,14 +64,14 @@ const ProjectsPage = () => {
 
 	return (
 		<div id='companies'>
-			<Box sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}>
+			<Box sx={{ bgcolor: 'background.paper', maxWidth: { xs: 400, sm: 900, lg: 1600 } }}>
 				<Tabs
-					orientation="vertical"
-					variant="scrollable"
 					value={value}
 					onChange={handleChange}
-					aria-label="Vertical tabs example"
-					sx={{ borderRight: 1, borderColor: 'divider', minWidth: 200, minHeight: 1100 }}
+					variant="scrollable"
+					scrollButtons
+					allowScrollButtonsMobile
+					aria-label="scrollable force tabs"
 				>
 					{!isLoading && roles && roles.length > 0 ? roles.map((role: any, index: any) => (
 						<Tab disabled={!role.projects || !role.projects.length} label={role.company + (role.projects && role.projects.length? ' (' + role.projects.length + ')' : '')} key={role.company.toString()} {...a11yProps(index)} />

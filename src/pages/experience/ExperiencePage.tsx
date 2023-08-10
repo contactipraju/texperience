@@ -10,7 +10,7 @@ const ExperiencePage = () => {
 		<div id='experience-page'>
 			<SkillsContextProvider>
 				<div className='experience-page-heading'>
-					Some of the Projects/Features I contributed to in my past roles:
+					My notable Projects/Features in the past roles
 				</div>
 
 				<div className='content'>

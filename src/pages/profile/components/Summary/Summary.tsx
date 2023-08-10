@@ -59,19 +59,18 @@ const Summary = (props: any) => {
 				</div>
 			)) : <div>{'No portfolio available'}</div> }
 
-			<p className="c3">
+			{/* <p className="c3">
 				<span className="c1"><b>Meetups I participate in: </b></span>
 				<span className="c0">ng-sydney, react-sydney, SydJS, SydCSS</span>
-			</p>
+			</p> */}
 
-			<p className="c3">
+			{/* <p className="c3">
 				<span className="c1"><b>On weekends: </b></span>
 				<span className="c0">
 					As a science communicator, I talk about all things science, primarily through web-radios (over 250 hourly-episodes and going), discussing topics like: Science, History, Rationalism, Myth-busting, Fighting Misinformation,
 					Interviewing Astrophysicists from around the world, Conversations with Scientists, Doctors, Lawyers, Humanists and subject matter experts on Democracy, Human Rights, Free-thinking etc.
 				</span>
-			</p>
-
+			</p> */}
 		</div>
 	)
 }

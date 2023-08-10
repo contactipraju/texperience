@@ -27,6 +27,7 @@
 		font-size: 14px;
 		text-align: right;
 		text-decoration: none;
+		line-break: anywhere;
 
 		img.icon-image {
 			vertical-align: bottom;
@@ -35,6 +36,7 @@
 		span, a {
 			margin: 8px;
 			color: white;
+			white-space: pre;
 		}
 	}
 }

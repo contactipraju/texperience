@@ -21,19 +21,19 @@ const Project = (props: any) => {
 						))}
 					</div>
 				}
-			</div>
 
-			<div className='assets'>
-				{props.project['videos'] && props.project['videos'].length > 0 &&
-					<div className='videos'>
-						{props.project['videos']!.map((video: string) => (
-							<YoutubeEmbed embedId={video} key={video.toString()} />
-						))}
-					</div>
-				}
-				{props.project['images'] && props.project['images'].length > 0 &&
-					<ImageStepper images={props.project['images']}/>
-				}
+				<div className='assets'>
+					{props.project['videos'] && props.project['videos'].length > 0 &&
+						<div className='videos'>
+							{props.project['videos']!.map((video: string) => (
+								<YoutubeEmbed embedId={video} key={video.toString()} />
+							))}
+						</div>
+					}
+					{props.project['images'] && props.project['images'].length > 0 &&
+						<ImageStepper images={props.project['images']}/>
+					}
+				</div>
 			</div>
 		</div>
 	)

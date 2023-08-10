@@ -1,4 +1,4 @@
-.role {
+#role {
 	color: rgb(47, 129, 247);
 	background-color: #222;
 
@@ -6,7 +6,7 @@
 	border: 1px solid #444;
 	border-radius: 5px;
 
-	padding: 10px;
+	padding: 5px;
 	margin: 5px;
 
 	.role-designation {
@@ -16,10 +16,12 @@
 	}
 
 	.role-description {
+		padding: 10px;
+		max-width: 400px;
+
 		font-style: italic;
 		font-size: smaller;
 		color: rgb(125, 133, 144);
-		padding: 10px;
 	}
 
 	.role-period {
@@ -52,5 +54,14 @@
 			border: 1px solid rgba(56, 139, 253, 0.1);
 			border-radius: 2em;
 		}
+	}
+
+	.role-projects {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+	
+		color: rgb(47, 129, 247);
 	}
 }

@@ -8,8 +8,8 @@ const Roles = (props: any) => {
 	const { role } = props;
 
 	return (
-		<div className='role' key={role.company.toString()}>
-			<div className='role-designation'>{role.designation}</div>
+		<div id='role' key={role.company.toString()}>
+			{/* <div className='role-designation'>{role.designation}</div>
 			<div className='role-description'>{role.description}</div>
 			<div className='role-period'>{role.period}</div>
 
@@ -20,9 +20,9 @@ const Roles = (props: any) => {
 						<span className='skill' key={skill.skill.toString()}>{skill.skill}</span>
 					))}
 				</div>
-			}
+			} */}
 
-			<div id='role-projects'>
+			<div className='role-projects'>
 				{role.projects && role.projects.length > 0 ? role.projects.map((project: IRoleData) => (
 					<Project project={project} key={project.id}/>
 				)) : <div>{'No projects available'}</div> }

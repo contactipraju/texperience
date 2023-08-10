@@ -21,7 +21,7 @@ const Downloads = (props: any) => {
 	];
 
 	const download = (e:any) => {
-		LogEvent(e.target.href, 'resume_downloads');
+		LogEvent(e.target.href, 'resume-downloads');
 	}
 
 	return (

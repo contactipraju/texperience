@@ -4,14 +4,13 @@ import './ExperiencePage.scss';
 import SkillsContextProvider from '../skills/SkillsContext';
 
 import Companies from './components/Companies/Companies';
+import PageTitle from '../../core/components/PageTitle/PageTitle';
 
 const ExperiencePage = () => {
 	return (
 		<div id='experience-page'>
 			<SkillsContextProvider>
-				<div className='experience-page-heading'>
-					My notable Projects/Features in the past roles
-				</div>
+				<PageTitle title="My notable Projects/Features in the past roles" />
 
 				<div className='content'>
 					<Companies />

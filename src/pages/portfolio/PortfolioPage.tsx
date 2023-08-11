@@ -6,6 +6,7 @@ import { IPortfolioData } from './Portfolio.interfaces';
 import { getActiveReposFromGitHub } from './Portfolio.service';
 
 import Portfolio from './components/Portfolio/Portfolio';
+import PageTitle from '../../core/components/PageTitle/PageTitle';
 
 const PortfolioPage = () => {
 	const [portfolios, setPortfolios] = useState<IPortfolioData[]>([]);
@@ -18,9 +19,7 @@ const PortfolioPage = () => {
 
 	return (
 		<div id='portfolio-page'>
-			<div className='portfolio-page-heading'>
-				My active GitHub projects:
-			</div>
+			<PageTitle title="My active GitHub projects" />
 
 			<div className='content'>
 				<Portfolio portfolios={portfolios}/>

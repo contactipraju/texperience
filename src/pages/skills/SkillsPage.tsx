@@ -2,6 +2,7 @@ import './SkillsPage.scss';
 
 import SkillsContextProvider from './SkillsContext';
 import SkillsChart from './components/SkillsChart/SkillsChart';
+import PageTitle from '../../core/components/PageTitle/PageTitle';
 
 // TODO: let user add/edit/delete Companies/Skills information, via a modal dialog
 // import CompaniesForm from './components/CompaniesForm/CompaniesForm';
@@ -11,6 +12,8 @@ import SkillsChart from './components/SkillsChart/SkillsChart';
 const SkillsPage = () => {
 	return (
 		<div id="skills-page">
+			<PageTitle title="Primary Technologies I used in past roles. The chart is best viewed on larger screens" />
+
 			<SkillsContextProvider>
 				<div className="content">
 					<SkillsChart />

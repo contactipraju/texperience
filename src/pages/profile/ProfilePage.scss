@@ -4,15 +4,11 @@
     margin-left: auto;
     margin-right: auto;
 
-	.component-title {
-		text-align: center;
-	}
-
-	.container {
+	.content {
 		display: flex;
 		flex-direction: column;
 
-		min-width: 360px;
+		min-width: 350px;
 		max-width: 800px;
 
 		margin-left: auto;

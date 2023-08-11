@@ -7,7 +7,7 @@ import Summary from './components/Summary/Summary';
 const ProfilePage = () => {
 	return (
 		<div id='profile-page'>
-			<div className='container'>
+			<div className='content'>
 				<Summary />
 				{/* <LinkedInProfileBadge /> */}
 				{/* <Downloads /> */}

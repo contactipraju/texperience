@@ -53,7 +53,6 @@ const SkillsChart = () => {
 
 	return (
 		<div id="chart">
-			{/* <div className="chart-title"> Companies I worked at in the last 14 years and the Main Technologies (Web/Mobile development) I used</div> */}
 			{!isLoading && 
 				<ReactApexChart options={chartData.options} series={chartData.series} type="rangeBar" height={500} />
 			}

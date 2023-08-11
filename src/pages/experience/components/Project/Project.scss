@@ -1,15 +1,20 @@
 .project {
-	width: 400px;
+	width: 390px;
 	padding: 8px;
-	margin: 10px;
+	margin: 5px;
 
 	text-align: left;
 	border: 1px solid #444;
 	border-radius: 5px;
+	background-color: #222;
 
 	.details {
 		position: relative;
 		height: 100%;
+
+		> div {
+			padding: 3px;
+		}
 
 		.heading {
 			display: flex;
@@ -21,6 +26,13 @@
 				font-size: 20px;
 				font-weight: 600;
 				line-height: 30px;
+			}
+
+			.links a {
+				color: rgb(47, 129, 247);
+				font-size: smaller;
+				text-decoration: none;
+				text-align: left;
 			}
 		}
 
@@ -50,18 +62,8 @@
 			}
 		}
 
-		.links a {
-			color: rgb(47, 129, 247);
-			font-size: smaller;
-			text-decoration: none;
-			position: absolute;
-			left: 0;
-			bottom: 10px;
-			text-align: left;
-		}
-
 		.assets {
-			height: 300px;
+			height: 310px;
 
 			.MuiBox-root {
 				.MuiPaper-root:first-child {

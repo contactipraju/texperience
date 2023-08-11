@@ -10,17 +10,17 @@ const Project = (props: any) => {
 					<div className='name'>
 						<span className='name-link tooltip' title='View the Code'>{props.project['name']}</span>
 					</div>
+
+					{props.project['links'] && props.project['links'].length > 0 &&
+						<div className='links'>
+							{props.project['links']!.map((link: any) => (
+								<a className='link' key={link.label.toString()} target='_blank' rel='noreferrer' href={link['url']}>Website</a>
+							))}
+						</div>
+					}
 				</div>
 
 				<div className='description'>{props.project.description}</div>
-
-				{props.project['links'] && props.project['links'].length > 0 &&
-					<div className='links'>
-						{props.project['links']!.map((link: any) => (
-							<a className='link' key={link.label.toString()} target='_blank' rel='noreferrer' href={link['url']}>Website</a>
-						))}
-					</div>
-				}
 
 				<div className='assets'>
 					{props.project['videos'] && props.project['videos'].length > 0 &&

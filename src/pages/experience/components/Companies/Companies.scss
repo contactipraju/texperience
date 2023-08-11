@@ -1,4 +1,12 @@
 #companies {
 	color: #444;
 	display: flex;
+
+	.MuiBox-root {
+		> div {
+			> div {
+				padding: 3px;
+			}
+		}
+	}
 }

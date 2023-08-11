@@ -64,7 +64,7 @@ const ProjectsPage = () => {
 
 	return (
 		<div id='companies'>
-			<Box sx={{ bgcolor: 'background.paper', maxWidth: { xs: 400, sm: 900, lg: 1600 } }}>
+			<Box sx={{ bgcolor: 'background.paper', maxWidth: { xs: 390, sm: 900, lg: 1600 } }}>
 				<Tabs
 					value={value}
 					onChange={handleChange}

@@ -1,0 +1,21 @@
+#allcompanies {
+	color: #444;
+	display: flex;
+
+	.all-projects {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+	
+		color: rgb(47, 129, 247);
+	}
+
+	.MuiBox-root {
+		> div {
+			> div {
+				padding: 3px;
+			}
+		}
+	}
+}

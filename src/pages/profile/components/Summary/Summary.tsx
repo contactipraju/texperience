@@ -5,34 +5,41 @@ const Summary = (props: any) => {
 		{
 			title: 'An Engineer with',
 			points: [
-				{ text: 'Expert-level understanding of the fundamentals of Javascript and TypeScript'},
+				{ text: 'Expert-level understanding of the fundamentals of Web applications development'},
 				{ text: 'Thorough knowledge and expertise on Frontend best practices and Design patterns'},
-				{ text: 'Strong passion towards Usability, User experience, Human-centered designs'}
-			]
-		},
-		{
-			title: 'Experience includes',
-			points: [
-				{ text: 'Working for MNCs / Product Companies (Microsoft, Specialized, Morningstar etc)'},
-				{ text: 'Working in Startups (Divami, eureQa, Ahoy Club, Todays Plan etc), often closely with Co-founders'},
-				{ text: 'Working in Multidisciplinary and Cross-functional teams, with Clients, Product Managers, Designers, Backend Developers, all from different geographies'},
-				{ text: '8 years in Developing applications on all major Mobile Development Platforms including PalmOS, PocketPCs, Embedded Linux phones, Windows Mobile etc'}
+				{ text: 'Demonstrable experience developing Highly-interactive Single Page Apps uisng Modern JS Frameworks'},
+				{ text: 'Strong passion towards Usability, User experience, Human-centered designs'},
+				{ text: 'Strong sense of ownership & mentorship. An active Javascript community participant'}
 			]
 		},
 		{
 			title: 'Technical Skills',
 			points: [
-				{ heading: 'Web Technologies', text: '14 years of Developing Highly-interactive Single Page Apps'},
-				{ heading: 'Modern JS frameworks', text: '8+ years experience with Angular versions 1.x thru 16, React, etc'},
-				{ heading: 'Backend', text: 'Primarily in NodeJS (Javascript in the Backend), Next.js, Nuxt.js, Express.js etc'},
-				{ heading: 'Mobile', text: 'Native, PWAs, Hybrid Apps (Webviews) and Frameworks (OnSenUI, React Native etc)'},
-				{ heading: 'APIs', text: 'Soap, REST, GraphQL with XML and JSON'},
-				{ heading: 'DevOps best practices', text: 'CI/CD Automation, Test Automation and Continuous Deployment'},
-				{ heading: 'Frontend dev tools', text: ' Node, NPM, Yarn, Webpack, Babel, Grunt, Gulp, Git etc'},
-				{ heading: 'Code optimization tools', text: 'SonarCloud, BugSnag, Google Analytics etc'},
-				{ heading: 'Software development processes', text: 'TDD, BDD, Agile, Kanban Methodologies'},
-				{ heading: 'Designing', text: 'Interaction Designs, Style-guides and Design Systems'},
-				{ heading: 'CSS', text: 'Responsive Web Designs, UI Libraries, CSS Preprocessors'}
+				{ heading: 'Frontend', text: 'AngularJS (versions 1.x), Angular (2 to 16), NgRx, RxJS, React/Redux, VueJS etc'},
+				{ heading: 'Web', text: 'HTML5, CSS3, LESS, SASS, SCSS, Bootstrap, Tailwind, REST, GraphQL etc'},
+				{ heading: 'Backend', text: 'Primarily in NodeJS, Next.js, Express.js etc'},
+				{ heading: 'CSS', text: 'Responsive Web Designs, UI Libraries and all major CSS Preprocessors'},
+				{ heading: 'Mobile', text: 'Native, PWAs, Hybrid Apps and other frameworks (OnSenUI, React Native etc)'},
+				{ heading: 'Charting', text: 'Highcharts, Google Charts, FusionCharts, KendoUI, d3.js, ApexCharts etc'},
+				{ heading: 'Other', text: 'C, C++, Embedded VC++, Win32 SDK, SQL etc'}
+			]
+		},
+		{
+			title: 'Development Tools & Processes',
+			points: [
+				{ heading: 'Software development processes', text: 'TDD, Agile, Kanban Methodologies'},
+				{ heading: 'Designing', text: 'Wire-framing, UI Architecture, Interaction Designs, Style-guides and Design Systems'},
+				{ heading: 'Frontend dev tools', text: 'Node, NPM, Yarn, Webpack, Babel, Grunt, Gulp, Git etc'},
+				{ heading: 'DevOps (CI/CD)', text: 'Test Automation, Build Automation & Deployment, Code optimization and Analytics'}
+			]
+		},
+		{
+			title: 'Experience working in',
+			points: [
+				{ text: 'MNCs / Product Companies (Microsoft, Specialized, Morningstar etc)'},
+				{ text: 'Startups (Divami, eureQa, Ahoy Club, Todays Plan etc), often closely with Co-founders'},
+				{ text: 'Multidisciplinary teams involving Clients, Product Managers, Designers, Backend Developers, QA teams'},
+				{ text: 'All major Mobile Platforms including PalmOS, PocketPCs, Embedded Linux phones, Windows Mobile etc'}
 			]
 		}
 	];
@@ -40,7 +47,7 @@ const Summary = (props: any) => {
 	return (
 		<div id='summary'>
 			<p className='c11'>
-				<span>A Frontend-specialist with extensive experience in all aspects of Design and Development of Web, Mobile and Hybrid applications using Modern Javascript Frameworks and Libraries.</span>
+				<span>A Frontend-specialist with extensive experience in all aspects of Design and Development of Web, Mobile and Hybrid applications with impeccable attention to details.</span>
 			</p>
 
 			{intro.length > 0 ? intro.map((section) => (
@@ -60,8 +67,8 @@ const Summary = (props: any) => {
 			)) : <div>{'No portfolio available'}</div> }
 
 			{/* <p className="c3">
-				<span className="c1"><b>Meetups I participate in: </b></span>
-				<span className="c0">ng-sydney, react-sydney, SydJS, SydCSS</span>
+				<span className="c1"><b>What to say Hello! see me at: </b></span>
+				<span className="c0">SydJS-Classic, SydCSS, react-sydney, vue-sydney, fullstackerssyd, ng-sydney etc</span>
 			</p> */}
 
 			{/* <p className="c3">

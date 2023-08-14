@@ -13,24 +13,24 @@ import ProfilePage   from './pages/profile/ProfilePage';
 import ExperiencePage  from './pages/experience/ExperiencePage';
 
 function App() {
-		return (
-			<div className="App">
-				<ProfileContextProvider>
-					<Router>
-						<Header />
-						<NavBar />
+	return (
+		<div className="App">
+			<ProfileContextProvider>
+				<Router>
+					<Header />
+					<NavBar />
 
-						<Routes>
-							<Route path="/summary" element={<ProfilePage />} />
-							<Route path="/skills" element={<SkillsPage />} />
-							<Route path="/experience" element={<ExperiencePage />} />
-							<Route path="/portfolio" element={<PortfolioPage />} />
-							<Route path="*" element={<Navigate to="/summary" />} />
-						</Routes>
-					</Router>
-				</ProfileContextProvider>
-			</div>
-		)
+					<Routes>
+						<Route path="/summary" element={<ProfilePage />} />
+						<Route path="/skills" element={<SkillsPage />} />
+						<Route path="/experience" element={<ExperiencePage />} />
+						<Route path="/portfolio" element={<PortfolioPage />} />
+						<Route path="*" element={<Navigate to="/summary" />} />
+					</Routes>
+				</Router>
+			</ProfileContextProvider>
+		</div>
+	)
 }
 
 export default App;

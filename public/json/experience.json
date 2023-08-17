@@ -61,7 +61,7 @@
 				{
 					"id": "tp-03",
 					"name" : "Calendar",
-					"description": "Today’s Plan’s core area of user interactions",
+					"description": "Today’s Plan’s Calendar, the core area for users to interact with the training platform",
 					"details": [],
 					"roles": [],
 					"links": [],

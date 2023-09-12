@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 
 import { useContext } from 'react';
-import { ProfileContext, IProfileContext } from '../../pages/profile/ProfileContext';
+import { ProfileContext, IProfileContext } from '../../pages/summary/ProfileContext';
 
 function Header() {
 	const { isLoading, profile } = useContext(ProfileContext) as IProfileContext;

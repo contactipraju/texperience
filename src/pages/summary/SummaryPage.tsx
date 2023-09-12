@@ -1,12 +1,12 @@
-import './ProfilePage.scss';
+import './SummaryPage.scss';
 
 import LinkedInProfileBadge from './components/LinkedInProfileBadge/LinkedInProfileBadge';
 // import Downloads from './components/Downloads/Downloads';
 import Summary from './components/Summary/Summary';
 
-const ProfilePage = () => {
+const SummaryPage = () => {
 	return (
-		<div id='profile-page'>
+		<div id='summary-page'>
 			<div className='content'>
 				<Summary />
 				<LinkedInProfileBadge />
@@ -16,4 +16,4 @@ const ProfilePage = () => {
 	)
 }
 
-export default ProfilePage;
+export default SummaryPage;

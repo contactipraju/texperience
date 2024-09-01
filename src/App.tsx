@@ -6,6 +6,7 @@ import Header from './core/Header/Header';
 import NavBar from './core/NavBar/NavBar';
 
 import { ProfileContextProvider } from './pages/summary/ProfileContext';
+import OnPage from './pages/on/OnPage';
 
 import SummaryPage    from './pages/summary/SummaryPage';
 import SkillsPage     from './pages/skills/SkillsPage';
@@ -21,6 +22,12 @@ function App() {
 					<NavBar />
 
 					<Routes>
+						<Route path="/on/:person" element={<OnPage />} />
+						<Route path="/on/:person/summary" element={<SummaryPage />} />
+						<Route path="/on/:person/skills" element={<SkillsPage />} />
+						<Route path="/on/:person/experience" element={<ExperiencePage />} />
+						<Route path="/on/:person/portfolio" element={<PortfolioPage />} />
+
 						<Route path="/summary" element={<SummaryPage />} />
 						<Route path="/skills" element={<SkillsPage />} />
 						<Route path="/experience" element={<ExperiencePage />} />

@@ -7,6 +7,11 @@ import { addDoc, collection } from "@firebase/firestore";
 
 import { analytics } from '../firebase/firebase';
 
+function unWrap() {
+	let url = "https://domain/profile/prasadaindukuri/experience";
+	return url;
+}
+
 function isLocalHost() {
 	return (["localhost", "127.0.0.1", ""].includes(window.location.hostname));
 }

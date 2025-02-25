@@ -24,8 +24,10 @@
 			"from": "23 July 2016",
 			"to": "30 Apr 2018",
 			"website": ["https://www.todaysplan.com.au"],
-			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
+			"skills": [
+				{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
 				{"skill": "AngularJS", "duration": ["2016-07-23", "2018-04-30"]},
+				{"skill": "OnsenUI", "duration": ["2017-10-23", "2018-04-30"]},
 				{"skill": "Angular", "duration": ["2017-10-23", "2018-04-30"]}
 			],
 			"contribution": [
@@ -103,9 +105,10 @@
 			"to": "14 Nov 2019",
 			"skills": [
 				{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"},
-				{"skill": "React"}, {"skill": "ReactNative"}, {"skill": "Redux"},
 				{"skill": "Angular", "duration": ["2019-09-23", "2019-11-14"]},
-				{"skill": "NgRx", "duration": ["2019-09-23", "2019-11-14"]}
+				{"skill": "NgRx", "duration": ["2019-03-01", "2019-11-14"]},
+				{"skill": "RxJS", "duration": ["2019-03-01", "2019-11-14"]},
+				{"skill": "React"}, {"skill": "Redux"}, {"skill": "ReactNative"}
 			]
 		},
 		{
@@ -114,7 +117,7 @@
 			"from": "18 Nov 2019",
 			"to": "20 Jan 2023",
 			"website": ["https://www.specialized.com/au/en"],
-			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "AngularJS" }, { "skill": "Angular" }, { "skill": "OnsenUI" }, { "skill": "NgRx" }, { "skill": "RxJS" }],
+			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "AngularJS" }, { "skill": "Angular" }, { "skill": "RxJS" }],
 			"contribution": [
 				"Made Architectural changes to enable RiderHub to be embedded into Android and iOS app (Ride) using Webviews",
 				"Reduced Development costs, Maintenance costs, and the release cycles with single code-base for multiple platforms",
@@ -216,6 +219,41 @@
 			"from": "18 Feb 2023",
 			"to": "15 Jul 2023",
 			"skills": [{"skill": "HTML"}, {"skill": "CSS"}, {"skill": "Javascript"}, {"skill": "TypeScript"}, { "skill": "NodeJS" }, { "skill": "React" }]
+		},
+		{
+			"company": "Objective Corporation",
+			"description": "Building Outstanding digital government software driving stronger communities and nations",
+			"from": "25 Sep 2023",
+			"to": "01 Mar 2025",
+			"website": ["https://www.objective.com.au/"],
+			"skills": [
+				{"skill": "HTML"},
+				{"skill": "CSS"},
+				{"skill": "Javascript"},
+				{"skill": "AngularJS"},
+				{"skill": "TypeScript"},
+				{"skill": "AngularJS" },
+				{"skill": "React" },
+				{"skill": "ReactNative", "duration": ["2024-07-01", "2024-10-10"]}
+			],
+			"contribution": [
+				"Lead Connect's biggest release, completely rewamping the UI of the product."
+			],
+			"projects": [
+				{
+					"id": "oc-01",
+					"name" : "Objective Connect",
+					"description": "Designed specifically for government and regulated industries, Objective Connect is a secure IRAP-assessed external file sharing application that gives complete control over the information you share outside your organisation.",
+					"details": [],
+					"roles": [],
+					"links": [],
+					"images": [
+						{ "label": "Objective Connect", "imgPath": "/images/roles/projects/oc-01/oc-01-01.svg" }
+					],
+					"videos": [],
+					"technologies": []
+				}
+			]
 		}
 	]
 }

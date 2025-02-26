@@ -1,7 +1,7 @@
 import './SummaryPage.scss';
 
 import LinkedInProfileBadge from './components/LinkedInProfileBadge/LinkedInProfileBadge';
-// import Downloads from './components/Downloads/Downloads';
+import Downloads from './components/Downloads/Downloads';
 import Summary from './components/Summary/Summary';
 
 const SummaryPage = () => {
@@ -10,7 +10,7 @@ const SummaryPage = () => {
 			<div className='content'>
 				<Summary />
 				<LinkedInProfileBadge />
-				{/* <Downloads /> */}
+				<Downloads />
 			</div>
 		</div>
 	)
